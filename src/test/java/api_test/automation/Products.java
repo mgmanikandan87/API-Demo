@@ -13,7 +13,9 @@ public class Products {
 
 		Response response = expect().statusCode(200).when()
 				.get("https://www.telize.com/geoip?callback");
-		response.getBody().prettyPrint();
+		String prettyPrint = response.getBody().prettyPrint();
+		
+		
 
 	}
 
